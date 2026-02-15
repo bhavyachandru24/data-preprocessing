@@ -1,121 +1,30 @@
 # Data-preprocessing
+How to Run the Code
 
-**Model overview**
-The objective of this model is to predict the target variable using structured input features after proper data preprocessing. The model is designed to learn patterns from historical data and generate accurate predictions on unseen data.
+1. Ensure Python 3.x is installed.
 
-Depending on the problem statement, the model can perform:
+2. Install the required libraries:
+    pandas
+    numpy
+    scikit-learn
 
-Regression (for continuous target variables such as price or salary)
+3. Place the dataset file preprocessing.csv in the same directory as preprocess.py.
 
-Classification (for categorical target variables such as performance level or category)
+4. Open the project folder in your Python IDE.
 
-**Dataset Description**
+5. Open the file preprocess.py.
 
-The dataset contains a mix of numerical and categorical features along with a target variable. It includes:
+6. Run the script.
 
-Numerical features (e.g., Age, Salary, Experience)
+7. After execution, the program will:
 
-Categorical features (e.g., Department, City)
+    Load the raw dataset
 
-Target variable (e.g., Performance_Score)
+    Handle missing values
 
-The raw dataset may contain:
+    Encode categorical variables
 
-Missing values
+    Scale numerical features
 
-Categorical data
+    Split the dataset
 
-Outliers
-
-Features on different scales
-
-**Preprocessing Steps Performed**
-1. Handling Missing Values
-
-Numerical columns were filled using the median value.
-
-Categorical columns were filled using the most frequent value (mode).
-
-This ensures no null values remain in the dataset.
-
-2. Outlier Detection and Removal
-
-The Interquartile Range (IQR) method was applied to numerical features.
-
-Extreme values outside acceptable bounds were removed.
-
-This improves model stability and reduces noise.
-
-3. Encoding Categorical Variables
-
-Categorical columns were converted into numerical form using encoding techniques.
-
-Label Encoding or OneHot Encoding was applied depending on the use case.
-
-4. Feature Scaling
-
-StandardScaler was used to normalize numerical features.
-
-This ensures all features are on a comparable scale.
-
-5. Train-Test Split
-
-The dataset was split into:
-
-80% Training data
-
-20% Testing data
-
-A fixed random state was used for reproducibility.
-
-**Output**
-
-After preprocessing:
-
-The dataset contains no missing values.
-
-Categorical variables are encoded.
-
-Numerical features are scaled.
-
-Outliers are handled.
-
-The cleaned dataset is saved as cleaned_dataset.csv.
-
-**Requirements**
-
-The following Python libraries are required:
-
-pandas
-
-numpy
-
-scikit-learn
-
-Ensure these libraries are installed in your Python environment before running the script.
-
-**How to Run the Code**
-
-Download or copy the project files into a folder.
-
-Place the dataset file (for example, preprocessing.csv) in the same directory as the preprocessing script file (for example, preprocess.py).
-
-Open the project folder in a Python-supported environment such as VS Code or PyCharm.
-
-Open the preprocessing script file.
-
-Run the script.
-
-After execution, the program will:
-
-Load the raw dataset
-
-Perform data cleaning
-
-Apply encoding and scaling
-
-Split the dataset
-
-Save the cleaned dataset
-
-The cleaned dataset will be saved in the project directory.
