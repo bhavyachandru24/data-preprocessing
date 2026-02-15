@@ -12,7 +12,7 @@ How to Run the Code
 
 4. Open the project folder in your Python IDE.
 
-5. Open the file preprocess.py.
+5. Open the file data_preprocessing.py.
 
 6. Run the script.
 
